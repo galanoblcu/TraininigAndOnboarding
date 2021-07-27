@@ -47,3 +47,11 @@ Here's a sample of a bookmap:
 In this example, references to topics are wrapped by <chapter>. Above all the chapters, a frontmatter is used in as similar way as cover page in Framemaker.
 
 While in <map>, this is all you have after <title>:
+
+	<?xml version="1.0" encoding="UTF-8"?>
+	<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
+		<map>
+			<title>sample</title>
+		<
+	</map>
+
