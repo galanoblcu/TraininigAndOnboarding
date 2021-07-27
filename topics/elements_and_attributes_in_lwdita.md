@@ -54,4 +54,6 @@ While in <map>, this is all you have after <title>:
 			<title>sample</title>
 		<
 	</map>
+Or,
+			![image](https://user-images.githubusercontent.com/49274541/127173906-2d53ea59-f27c-4626-84bb-e3ea7807b6fc.png)
 
