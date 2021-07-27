@@ -43,3 +43,5 @@ Here's a sample of a bookmap:
         </chapter>
 
         </bookmap>
+
+In this example, references to topics are wrapped by <chapter>. Above all the chapters, a frontmatter is used in as similar way as cover page in Framemaker.
