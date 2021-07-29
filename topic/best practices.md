@@ -71,3 +71,34 @@ Or,
 - DTD, or document type definition, defines the topic type of a dita file. 
 - Topic is the parent to task, concept, reference, in which task is the parent to troubleshooting type.
 
+## Page break
+
+In framemaker, we can set a pagebreak at the insertion point to force a page break.
+
+In DITA, for recommended operations within a topic, see https://www.oxygenxml.com/doc/versions/23.1/ug-pdf-css/topics/dcpp_page_breaking.html 
+Note that settings to force / avoid page breaks in different scenarios, settings to avoid widow and orphan paragraph, lists have been added to the css in the publishing templates.
+
+## Automatic table layout
+
+Automatic adjustment to table width makes big tables look nicer. In DITA, manual operations to acchieve this, for example:
+
+	<table outputclass='auto_tbl'> ... </table>
+
+For details, see https://www.oxygenxml.com/doc/versions/23.1/ug-pdf-css/topics/dcpp_tables.html#dcpp_tables.
+
+I added a few settings to enable automatic table adjustment to the css file of publishing templates.
+
+## How to use the first column as table header
+
+In the source code of <table> in DITA, try this:
+
+	<row>
+      ...
+      <entry outputclass="rotated">
+            <p>Rotated</p>
+      </entry>
+      ...
+	</row>
+
+Corresponding settings have been made to the customization css file for publishing template.
+
