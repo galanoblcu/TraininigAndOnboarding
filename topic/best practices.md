@@ -1,10 +1,15 @@
-# Bookmap or map? 
+# Tips
+
+## Bookmap or map? 
 
 Basically, if there isn't a strict requirement on the layout of a PDF output, <bookmap> or <map> doesn't make difference.  
 
 What differs the bookmap from the map is the prefix "book-" in <bookmap>. In other words, as a larger container, <bookmap> supports richer supporting elements and attributes.
 
-Here's a sample of a bookmap: 
+- Bookmap: container for book, webhelp, etc. Rich support in elements and attributes that wraps the topicrefs
+- Map: smaller container for book, webhelp, etc.
+
+### An example of a bookmap: 
 
     <?xml version="1.0" encoding="utf-8"?>
     <!DOCTYPE bookmap PUBLIC "-//OASIS//DTD DITA BookMap//EN" "bookmap.dtd">
@@ -46,6 +51,8 @@ Here's a sample of a bookmap:
 
 In this example, references to topics are wrapped by <chapter>. Above all the chapters, a frontmatter is used in as similar way as cover page in Framemaker.
 
+### An example of map
+
 While in <map>, this is all you have after <title>:
 
 	<?xml version="1.0" encoding="UTF-8"?>
@@ -56,4 +63,11 @@ While in <map>, this is all you have after <title>:
 	</map>
 Or,
 			![image](https://user-images.githubusercontent.com/49274541/127173906-2d53ea59-f27c-4626-84bb-e3ea7807b6fc.png)
+
+## Topic types
+
+- In standard DITA, topic types include: concept, task, reference, troubleshooting
+- In lightweight DITA, topic only.
+- DTD, or document type definition, defines the topic type of a dita file. 
+- Topic is the parent to task, concept, reference, in which task is the parent to troubleshooting type.
 
